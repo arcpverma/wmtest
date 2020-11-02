@@ -1,0 +1,49 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 9.4.8
+-- Dumped by pg_dump version 9.5.17
+
+-- Started on 2019-08-05 18:37:01 IST
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- TOC entry 3369 (class 0 OID 57961444)
+-- Dependencies: 182
+-- Data for Name: cms; Type: TABLE DATA; Schema: public; Owner: vipin
+--
+
+INSERT INTO public.cms (id, heading, description, slug, created, cms_img_name) VALUES (5, 'Privacy', '<p>Privacy Text Goes Here</p>', 'privacy', '2019-04-17 05:09:15.013981', NULL);
+INSERT INTO public.cms (id, heading, description, slug, created, cms_img_name) VALUES (6, 'Deals Terms', '<p>Here is deal Terms text</p>', 'deals_terms', '2019-04-17 05:10:11.159746', NULL);
+INSERT INTO public.cms (id, heading, description, slug, created, cms_img_name) VALUES (7, 'Community Headline', '<p>Community Headline Goes <strong>Here</strong></p>', 'community_guideline', '2019-04-17 05:13:13.420543', NULL);
+INSERT INTO public.cms (id, heading, description, slug, created, cms_img_name) VALUES (8, 'Community Headline', '<p>Community Headline Goes <strong>Here TExt is here </strong>Nice to see this</p>', 'community_guideline', '2019-04-17 05:14:28.030037', NULL);
+INSERT INTO public.cms (id, heading, description, slug, created, cms_img_name) VALUES (9, 'Deals Terms', '<p>Here is deal Terms text. <i><strong>Here is bold text</strong></i></p>', 'deals_terms', '2019-04-17 05:14:57.185242', NULL);
+INSERT INTO public.cms (id, heading, description, slug, created, cms_img_name) VALUES (1, 'About', '<p>About HTML</p>', 'about', '2019-04-17 04:11:43.997588', '');
+INSERT INTO public.cms (id, heading, description, slug, created, cms_img_name) VALUES (3, 'Terms', '<p>Terms Text</p>', 'terms', '2019-04-17 04:41:41.925031', 'cms/terms.png');
+
+
+--
+-- TOC entry 3376 (class 0 OID 0)
+-- Dependencies: 183
+-- Name: cms_id_seq; Type: SEQUENCE SET; Schema: public; Owner: vipin
+--
+
+SELECT pg_catalog.setval('public.cms_id_seq', 1, false);
+
+
+-- Completed on 2019-08-05 18:37:01 IST
+
+--
+-- PostgreSQL database dump complete
+--
+
